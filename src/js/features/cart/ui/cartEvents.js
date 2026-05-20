@@ -2,7 +2,7 @@ import { removeItem } from '../logic/cartActions.js';
 import { renderCart } from './renderCart.js';
 import { renderProducts } from '../../products/ui/renderProducts.js';
 import { productsState } from '../../products/state/productsState.js';
-import { renderModal } from '../../modal/index.js';
+import { renderModal } from '../../modal/ui/renderModal.js';
 
 export function setupCartEvents() {
     document.addEventListener('click', e => {

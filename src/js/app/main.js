@@ -1,17 +1,13 @@
-import {
-    getProducts,
-    productsState,
-    renderProducts,
-    setupProductsEvents
-} from '../features/products/index.js'
+import { getProducts } from '../features/products/services/getProducts.js'
+import { productsState } from '../features/products/state/productsState.js'
+import { renderProducts } from '../features/products/ui/renderProducts.js'
+import { setupProductsEvents } from '../features/products/ui/productsEvents.js'
 
-import { 
-    renderCart,
-    setupCartEvents,
-    cartState
-} from '../features/cart/index.js'
+import { renderCart } from '../features/cart/ui/renderCart.js'
+import { setupCartEvents } from '../features/cart/ui/cartEvents.js'
+import { cartState } from '../features/cart/state/cartState.js'
 
-import { setupModalEvents } from '../features/modal/index.js'
+import { setupModalEvents } from '../features/modal/ui/modalEvents.js'
 
 import { loadCart } from '../features/cart/storage/cartStorage.js'
 

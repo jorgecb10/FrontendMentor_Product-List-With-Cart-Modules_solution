@@ -2,11 +2,11 @@ import { productsState } from "../state/productsState.js"
 import { renderProducts } from "./renderProducts.js"
 import { 
     addToCart, 
-    cartState, 
-    renderCart,
     increaseQuantity, 
     decreaseQuantity
-} from "../../cart"
+} from "../../cart/logic/cartActions.js"
+import { renderCart } from "../../cart/ui/renderCart.js"
+import { cartState } from "../../cart/state/cartState.js"
 
 export function setupProductsEvents() {
     document.addEventListener('click', e => {

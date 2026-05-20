@@ -1,5 +1,7 @@
-import { clearCart, renderCart } from "../../cart/index.js"
-import { productsState, renderProducts } from "../../products/index.js"
+import { clearCart } from "../../cart/logic/cartActions.js"
+import { renderCart } from "../../cart/ui/renderCart.js"
+import { productsState } from "../../products/state/productsState.js"
+import { renderProducts } from '../../products/ui/renderProducts.js' 
 
 const modal = document.querySelector('.order-modal')
 

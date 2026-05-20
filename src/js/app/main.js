@@ -13,8 +13,13 @@ import {
 
 import { setupModalEvents } from '../features/modal'
 
+import { loadCart } from '../features/cart/storage/cartStorage'
+
 export function initApp() {
     productsState.items = getProducts()
+
+    const savedCart = loadCart()
+    cartState.setItems(savedCart)
     
     renderProducts(productsState.items)
     renderCart(cartState.getItems())

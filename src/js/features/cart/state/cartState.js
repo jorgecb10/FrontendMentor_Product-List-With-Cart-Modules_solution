@@ -1,3 +1,5 @@
+import { saveCart } from "../storage/cartStorage"
+
 export const state = {
     items: []
 }
@@ -9,5 +11,6 @@ export const cartState = {
 
     setItems(newItems) {
         state.items = newItems
+        saveCart(state.items)
     } 
 }

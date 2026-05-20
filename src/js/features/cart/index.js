@@ -1,0 +1,5 @@
+export { renderCart } from './ui/renderCart'
+export { setupCartEvents } from './ui/cartEvents'
+export { cartState } from './state/cartState'
+export { calculateCartTotal } from './calculations/cartCalculations'
+export { addToCart, increaseQuantity, decreaseQuantity, removeItem, clearCart } from './logic/cartActions'

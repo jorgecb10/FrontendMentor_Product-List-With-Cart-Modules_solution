@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+    --font-red-hat-text: 'Red Hat Text', sans-serif;
+
+    --color-red: hsl(14, 86%, 42%);
+    --color-green: hsl(159, 69%, 38%);
+    --color-rose-50: hsl(20, 50%, 98%);
+    --color-rose-100: hsl(13, 31%, 94%);
+    --color-rose-300: hsl(14, 25%, 72%);
+    --color-rose-400: hsl(7, 20%, 60%);
+    --color-rose-500: hsl(12, 20%, 44%);
+    --color-rose-900: hsl(14, 65%, 9%);
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.order-modal {
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: 550px;
+    width: 100%;
+    margin: auto auto 0 auto;
+}
+
+@media (min-width: 640px) {
+    .order-modal {
+        margin: auto;
+    }
+}
+
+.order-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.decrease-btn:hover .icon-minus,
+.increase-btn:hover .icon-plus {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(43%) saturate(7136%) hue-rotate(15deg) brightness(92%) contrast(88%);
+}
+
+.remove-item-btn:hover .icon-delete {
+    filter: brightness(0) saturate(100%) invert(7%) sepia(19%) saturate(2776%) hue-rotate(334deg) brightness(94%) contrast(99%);
+    transition: filter .2s ease-in-out;
+}

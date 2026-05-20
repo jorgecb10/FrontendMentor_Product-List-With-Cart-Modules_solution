@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product-list-with-cart-main-modules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/style.css">
+  </head>
+  <body class="font-red-hat-text bg-rose-50 py-4">
+    <header>
+      <div class="container">
+        <h1 class="font-bold text-4xl">Desserts</h1>
+      </div>
+    </header>  
+
+    <main class="mt-8">
+      <div class="container lg:grid lg:grid-cols-5 gap-6 lg:items-start">
+        <div class="products-list sm:grid sm:grid-cols-2 sm:gap-10 sm:justify-between lg:grid-cols-3 lg:col-span-3"></div>
+
+        <div class="cart bg-white rounded-xl p-6 mt-8 lg:mt-0 lg:col-span-2">
+          <div class="flex items-center gap-1 text-red font-bold text-2xl">
+            <h2 class="">Your Cart</h2>
+            <span class="total-products"></span>
+          </div>
+
+          <div class="list-cart mt-6"></div>
+
+          <div class="order-confirm"></div>
+        </div>
+      </div>
+    </main>
+
+    <dialog class="order-modal"></dialog>
+
+    <script src="./src/js/app/initApp.js" type="module"></script>
+  </body>
+</html>

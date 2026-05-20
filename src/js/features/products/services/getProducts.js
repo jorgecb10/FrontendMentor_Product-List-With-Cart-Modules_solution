@@ -1,5 +1,4 @@
-import data from '../../../data/data.json' assert { type: 'json' }
-
-export function getProducts() {
-    return data
+export async function getProducts() {
+    const response = await fetch('/data/products.json')
+    return await response.json()
 }

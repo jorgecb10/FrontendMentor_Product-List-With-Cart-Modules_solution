@@ -15,8 +15,9 @@ import { setupModalEvents } from '../features/modal/index.js'
 
 import { loadCart } from '../features/cart/storage/cartStorage.js'
 
-export function initApp() {
-    productsState.items = getProducts()
+export async function initApp() {
+    const products = await getProducts()
+    productsState.items = products
 
     const savedCart = loadCart()
     cartState.setItems(savedCart)

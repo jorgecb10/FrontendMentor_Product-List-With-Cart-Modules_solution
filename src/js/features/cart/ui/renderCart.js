@@ -1,7 +1,6 @@
-import { cartState } from '../state/cartState';
-import { productsState } from '../../products/state/productsState';
-import { calculateCartTotal } from '../calculations/cartCalculations';
-
+import { cartState } from '../state/cartState.js';
+import { productsState } from '../../products/state/productsState.js';
+import { calculateCartTotal } from '../calculations/cartCalculations.js';
 const cartContainer = document.querySelector('.list-cart')
 const confirmContainer = document.querySelector('.order-confirm')
 const totalProducts = document.querySelector('.total-products')

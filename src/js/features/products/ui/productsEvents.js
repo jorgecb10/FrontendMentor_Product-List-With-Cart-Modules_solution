@@ -1,5 +1,5 @@
-import { productsState } from "../state/productsState"
-import { renderProducts } from "./renderProducts"
+import { productsState } from "../state/productsState.js"
+import { renderProducts } from "./renderProducts.js"
 import { 
     addToCart, 
     cartState, 

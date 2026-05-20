@@ -1,2 +1,2 @@
-export { renderModal } from './ui/renderModal'
-export { setupModalEvents } from './ui/modalEvents'
+export { renderModal } from './ui/renderModal.js'
+export { setupModalEvents } from './ui/modalEvents.js'

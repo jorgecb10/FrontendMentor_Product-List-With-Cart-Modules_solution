@@ -1,8 +1,8 @@
-import { removeItem } from '../logic/cartActions';
-import { renderCart } from './renderCart';
-import { renderProducts } from '../../products/ui/renderProducts';
-import { productsState } from '../../products/state/productsState';
-import { renderModal } from '../../modal';
+import { removeItem } from '../logic/cartActions.js';
+import { renderCart } from './renderCart.js';
+import { renderProducts } from '../../products/ui/renderProducts.js';
+import { productsState } from '../../products/state/productsState.js';
+import { renderModal } from '../../modal/index.js';
 
 export function setupCartEvents() {
     document.addEventListener('click', e => {

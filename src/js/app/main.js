@@ -3,17 +3,17 @@ import {
     productsState,
     renderProducts,
     setupProductsEvents
-} from '../features/products'
+} from '../features/products/index.js'
 
 import { 
     renderCart,
     setupCartEvents,
     cartState
-} from '../features/cart'
+} from '../features/cart/index.js'
 
-import { setupModalEvents } from '../features/modal'
+import { setupModalEvents } from '../features/modal/index.js'
 
-import { loadCart } from '../features/cart/storage/cartStorage'
+import { loadCart } from '../features/cart/storage/cartStorage.js'
 
 export function initApp() {
     productsState.items = getProducts()

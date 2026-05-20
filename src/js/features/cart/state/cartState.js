@@ -1,4 +1,4 @@
-import { saveCart } from "../storage/cartStorage"
+import { saveCart } from "../storage/cartStorage.js"
 
 export const state = {
     items: []

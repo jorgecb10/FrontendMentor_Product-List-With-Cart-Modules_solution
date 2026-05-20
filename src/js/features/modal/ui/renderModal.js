@@ -1,5 +1,5 @@
-import { cartState, calculateCartTotal } from "../../cart";
-import { productsState } from "../../products";
+import { cartState, calculateCartTotal } from "../../cart/index.js";
+import { productsState } from "../../products/index.js";
 
 const modal = document.querySelector('.order-modal');
 

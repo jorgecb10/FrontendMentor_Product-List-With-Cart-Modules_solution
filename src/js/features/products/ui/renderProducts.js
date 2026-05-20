@@ -1,4 +1,4 @@
-import { cartState } from "../../cart/state/cartState"
+import { cartState } from "../../cart/state/cartState.js"
 
 const productsContainer = document.querySelector('.products-list')
 

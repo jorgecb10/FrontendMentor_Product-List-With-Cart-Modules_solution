@@ -1,4 +1,4 @@
-import { cartState } from "../state/cartState"
+import { cartState } from "../state/cartState.js"
 
 function findCartItem(productId) {
     return cartState
